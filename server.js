@@ -8,6 +8,8 @@ var _favicon = favicon(path.join(__dirname, 'favicon.ico'))
 let counter = 0
 
 var server = http.createServer(function onRequest(req, res) {
+    console.log("req", req.method)
+    console.log("req145", req.url)
     counter++
     var done = finalhandler(req, res)
 
